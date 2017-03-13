@@ -3,6 +3,8 @@
 
 > Simple and small logger for node and the browser.
 
+![](screenshot.png)
+
 # Install 
 
 ```bash
@@ -29,6 +31,9 @@ log.dump({
 })
 ```
 
-#license
+Every log message, except dump messages, is composed by a timestamp, a context (the name of the caller function) and the formated message. If no context is provided (anonymous or undefined function) `'unknown'` is printed as context.
+Dump messages, are some kinf of yaml representation of objects.
+
+# license
 
 [MIT](/license) © [Yerko Palma](https://github.com/YerkoPalma).
