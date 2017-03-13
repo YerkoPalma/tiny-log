@@ -6,7 +6,7 @@
 # Install 
 
 ```bash
-$ npm install --save-dev tiny-log
+$ npm install --save-dev @yerkopalma/tiny-log
 ```
 
 # Usage
