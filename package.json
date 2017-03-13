@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Simple and small logger for node and the browser.",
   "main": "index.js",
-  "repository": "yerkopalma/tiny-log",
   "repository": "",
   "author": "Yerko Palma",
   "scripts": {
@@ -16,7 +15,10 @@
     "log"
   ],
   "devDependencies": {
-    "sinon": "^1.17.7"
+    "ava": "^0.18.2",
+    "sinon": "^1.17.7",
+    "snazzy": "^6.0.0",
+    "standard": "^9.0.1"
   },
   "dependencies": {
     "chalk": "^1.1.3",
