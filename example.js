@@ -20,5 +20,5 @@ log.dump({
   foo: {
     bar: 'baz'
   },
-  fn: function () {return this}
+  fn: function () { return this }
 })
