@@ -1,0 +1,25 @@
+{
+  "name": "@yerkopalma/tiny-log",
+  "version": "0.1.0",
+  "description": "Simple and small logger for node and the browser.",
+  "main": "index.js",
+  "repository": "yerkopalma/tiny-log",
+  "repository": "",
+  "author": "Yerko Palma",
+  "scripts": {
+    "test": "standard --verbose | snazzy && ava"
+  },
+  "keywords": [
+    "logger",
+    "node",
+    "browser",
+    "log"
+  ],
+  "devDependencies": {
+    "sinon": "^1.17.7"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "global": "^4.3.1"
+  }
+}
