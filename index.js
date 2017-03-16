@@ -8,9 +8,13 @@ var levels = {
   fatal: 100
 }
 
-function Logger (level) {
+function Logger (level, wrapErrors) {
   this.LEVEL = level || 'debug'
   this._LEVEL = levels[this.LEVEL]
+  if (wrapErrors) {
+    require('clarify')
+    require('trace')
+  }
 }
 
 /* eslint-disable no-caller */
@@ -72,7 +76,7 @@ Logger.prototype._print = function (level, text, context) {
 
     if (level === 'error') {
       time = chalk.dim.gray('[' + time + ']')
-      text = chalk.red(text)
+      text = chalk.red.bold(text)
     }
 
     if (level === 'fatal') {
